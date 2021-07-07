@@ -8,13 +8,36 @@ start()
 
 Class HomePageController{
 
-listDisplay : TestField
+ListView<String> listView
+loadListView()
 addListClicked()
 removeListClicked()
  editListClicked()
+ saveListClicked()
+}
+
+Class EditListController{
+TableView<Task> table
+TextField toDoListTitle
+TextField getTask
+TextField getDescription
+CheckBox getCheckBox
+DatePicker getDate
+
+homeClicked()
+addItemClicked()
+removeItemClicked()
+allItemsButtonClicked()
+completedItemsClicked()
+incompleteItemsClicked()
+saveListClicked()
+getTitle()
+loadList()
+setTitle()
 }
 
 JavaFx.Application <|-- HomePage
 
 HomePage--HomePageController
+HomePage--EditListController
 @enduml

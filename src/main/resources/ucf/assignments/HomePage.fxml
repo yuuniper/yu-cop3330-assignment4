@@ -6,6 +6,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<!--
+  ~ /*
+  ~  *  UCF COP3330 Summer 2021 Assignment 4 Solution
+  ~  *  Copyright 2021 Alice Yu
+  ~  */
+  -->
+
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.HomePageController">
    <children>
       <Label layoutX="31.0" layoutY="41.0" text="Hi, here are today's tasks: ">
@@ -17,5 +24,6 @@
       <Button layoutX="340.0" layoutY="332.0" mnemonicParsing="false" onAction="#removeListClicked" text="Remove List" />
       <ListView fx:id="listView" layoutX="340.0" layoutY="47.0" prefHeight="264.0" prefWidth="200.0" />
       <Button layoutX="463.0" layoutY="332.0" mnemonicParsing="false" onAction="#editListClicked" text="Edit List" />
+      <Button layoutX="72.0" layoutY="200.0" mnemonicParsing="false" onAction="#saveListClicked" text="Save" />
    </children>
 </AnchorPane>
